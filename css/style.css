@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* CORES */
+    --cor-primaria: #1a1a1a;
+    --cor-secundaria: #008000;
+    --cor-branca: #f5f5f5;
+    --cor-cinza: #b0b0b0;
+    --cor-cinza-escuro: #333;
+
+    /* FONTES */
+    --fonte-principal: 'Roboto', sans-serif;
+    --tamanho-fonte-base: 1.5rem;
+    --tamanho-fonte-h1: 1.5rem;
+    --tamanho-fonte-h2: 3rem;
+
+    /* MEDIDAS */
+    --largura-container-mobile: 90%;
+    --largura-container-tablet: 80%;
+    --largura-container-desktop: 1200px;
+}
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+}
+
+
+/* MOBILE FIRST */
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    line-height: 1.6;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        padding-left: 1rem;
+    }
+
+    nav{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding-right: 1rem;
+
+        a{
+            display: none;
+            color: inherit;
+        }
+    }
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    
+    &.verde{
+        background-color: var(--cor-secundaria);
+        color: var(--cor-branca);
+    }
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+
+    .hero{
+        height: 60vh;
+        background-image: url(../img/1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+
+        h2{
+            font-size: var(--tamanho-fonte-h2);
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+
+        p{
+            font-size: var(--tamanho-fonte-base);
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .funcoes{
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .palavras{
+            font-size: var(--tamanho-fonte-base);
+            margin: 0.7rem;
+        }
+
+        button{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0.60rem 1.25rem;
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            .btn-video{
+                background-color: var(--cor-branca);
+                color: var(--cor-primaria);
+                border: 2px solid var(--cor-branca);
+            }
+        }
+        button .btn-reportagem{
+            background-color: transparent;
+            color:var(--cor-branca) ;
+            border: 1px solid var(--cor-branca);
+        }
+    }
+
+    .hero{
+        height: 60vh;
+        background-image: url(../img/1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    header nav a { display: block; }
+    main .hero {padding: 4rem;}
+}
