@@ -381,7 +381,7 @@ main{
     .profile img {
         margin: 0;
     }
-.footer {
+    .footer {
         flex-direction: row; 
         justify-content: space-around;
         align-items: flex-start;
@@ -393,9 +393,13 @@ main{
         width: 45%;
         text-align: left;
     }
-    
+        
     .form {
         width: 45%;
+
+        .agendar{
+            font-size: 0.70rem;
+        }
     }
     
 }
