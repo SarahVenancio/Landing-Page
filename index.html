@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +8,117 @@
 </head>
 <body>
     <header>
-        <h1>AGROVANT</h1>
-        <nav>
-            <a href="#">FUNÇÕES</a>
-            <a href="#">ESPECIFICAÇÕES</a>
-            <a href="#">DEPOIMENTOS</a>
-            <button class="btn verde">AGENDE</button>
+        <h2>AGROVANT</h2>
+        <nav >
+                <a href="#funcoes">FUNÇÕES</a>
+                <a href="#especificacoes">ESPECIFICAÇÕES</a>
+                <a href="#depoimentos">DEPOIMENTOS</a>
+                <button class="btn"><a href="#agende">AGENDE</a></button>
         </nav>
     </header>
     <main>
         <div class="hero">
-            <h2>AGROVANT</h2>
-            <p>O drone Inteligente para silvicultura de alta performance</p>
-            <button class="btn verde">QUERO UMA DEMONSTRAÇÃO</button>
+                <video autoplay muted loop playsinline poster="img/1.png">
+                <source src="img/Vídeo 1.webm" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <div class="hero-content">
+                <h1>AGROVANT</h1>
+                <p>O drone Inteligente para silvicultura de alta performance</p>
+                <button class="btn" >
+                    <a href="">QUERO UMA DESMONSTRAÇÃO</a>
+        </button>
+    </div>
         </div>
-        <div class="funcoes">
+
+        <div class="beneficios" id="funcoes">
             <h2>Monitore e aplique defensivos agrícolas com precisão, economia e segurança ambiental.</h2>
-            <p class="palavras">🚁 Rápido  📡 Inteligente  🌱 Sustentável</p>
+            <h3>🚁 Rápido  📡 Inteligente  🌱 Sustentável</h3>
             <p>👉 Agende agora uma demonstração gratuita na sua fazenda!</p>
-            <button class="btn-video">Assistir vídeo ▶</button>
-            <button class="btn-reportagem">Reportagem</button>
+            <div class="videos">
+                <button class="branco">Assistir vídeo ▶</button>
+                <button class="preto">Reportagem</button>
+            </div>
         </div>
-        <div class="video2">
-            
-        </div>
-        <div class="especificacoes">
-            <div>
+       <div class="video">
+        <video src="img/Vídeo 2.webm" autoplay muted loop>
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+       </div>
+        
+        <div class="info" id="especificacoes"> 
+            <div class="box">
                 <h3>Monitoramento aéreo em tempo real</h3>
                 <p>das áreas de cultivo, identificando pragas, falhas de plantio e estresse hídrico.</p>
             </div>
-            <div>
+            <div class="box">
                 <h3>Aplicação localizada de defensivos</h3>
                 <p>com mapeamento por GPS e sensores de precisão.</p>
             </div>
-            <div>
+            <div class="box">
                 <h3>Redução de custos com insumos</h3>
                 <p>e mão de obra.</p>
             </div>
-            <div>
-                <h3>Cobertura de grandes áreas em poucos minutos</h3>
+            <div class="box">
+                <h3>Cobertura de grandes áreas 
+                em poucos minutos</h3>
                 <p>mesmo em terrenos acidentados.</p>
             </div>
-            <div>
+            <div class="box">
                 <h3>Relatórios automatizados</h3>
                 <p>para análise técnica e tomada de decisão rápida.</p>
             </div>
-            <div>
+            <div class="box">
                 <h3>E muito mais...</h3>
             </div>
         </div>
-        <div class="depoimentos">
-            
+        <div class="experiencias" id="depoimentos">
+            <div class="experiencias-content">
+                <div class="testimonial">
+                    <h2>Quem já testou, recomenda</h2>
+                    <p>“Em poucas semanas, conseguimos 
+                    identificar e tratar áreas críticas que estavam
+                    comprometendo nossa produtividade.”</p>
+                    <h3>Carlos Mendes, Engenheiro Florestal, MG</h3>
+                </div>
+
+                <div class="profile">
+                    <img src="img/4.jpg" alt="">
+                </div>
+                <div class="stats">
+                    <h2>⭐️⭐️⭐️⭐️⭐</h2>
+                    <h2>Mais de 250 fazendas</h2>
+                    <h3>atendidas em todo o Brasil</h3>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="agende">
+            <div class="call-to-action">
+                <h1>🎯 Pronto para ver de perto?</h1>
+                <h2 class="bold">Nossa equipe técnica vai até você!</h2>
+                <h3>Faça um teste gratuito com nosso drone em operação real no seu plantio florestal.<br>Sem compromisso, 100% prático.</h3>
+                <p>📞 Suporte: (11) 99999-0000<br>📍 Atendemos todo o sudeste e centro-oeste.</p>
+            </div>
+            <form class="form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                </div>
+                <input type="submit" value="AGENDAR UMA DEMONSTRAÇÃO">
+            </form>
         </div>
     </main>
     <footer>
-
+        <div></div>
+        <div></div>
     </footer>
 </body>
 </html>
