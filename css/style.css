@@ -49,7 +49,7 @@ body {
     display: inline-block;
 }
 
-header {
+header{
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -57,7 +57,6 @@ header {
     width: var(--largura-container-mobile);
     margin: 0 auto;
 }
-
 header nav {
     display: flex;
     gap: 1rem;
@@ -66,7 +65,6 @@ header nav {
 
 header nav a {
     display: none;
-    
 }
 
 header nav .btn {
@@ -77,6 +75,9 @@ header nav .btn {
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     background-color: var(--cor-secundaria);
+}
+header nav .btn a {
+    display: block;
 }
 
 main {
@@ -350,6 +351,7 @@ main {
     header nav a {
         display: block;
     }
+
 
     .info .box {
         flex: 1 1 calc(50% - 20px);
